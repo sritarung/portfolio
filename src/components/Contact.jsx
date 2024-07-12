@@ -70,7 +70,7 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-1 overflow-hidden`}
+      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
@@ -78,7 +78,7 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         
-          <ul className='list-none sm:flex-row flex-nowrap gap-2'>
+          <ul className='list-none max-sm:flex flex flex-nowrap gap-5'>
             <li>
               <Tilt
                 options={{
@@ -138,7 +138,7 @@ const Contact = () => {
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder='Enter your message!'
+              placeholder='Enter your message...'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
