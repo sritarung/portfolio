@@ -121,15 +121,16 @@ const technologies = [
 ];
 
 const experiences = [
+  
   {
-    title: "Software Engineer",
-    company_name: "Techn Incubator Queens College(TIQC)",
-    icon: tiqc,
+    title: "ML Full stack Developer",
+    company_name: "IQSpatial",
+    icon: iqspatial,
     iconBg: "#383E56",
-    date: "Feb. 2023 - May 2023",
+    date: "May 2024 - Present",
     points: [
-      "Consulted on developing a backend for Active World, an E-commerce startup, and led the creation of a Python system to automate API fetches and database updates, enhancing data availability in database by 20%.",
-      "Developed algorithms for processing API responses from 30+ web services & structured a MySQL database, reducing inconsistencies by 13% in real-time data integration. Teamed up with QA for API integration & security"
+      "Spearheaded the development of ML models in Colab, including a Solar Panel detection model using YOLOv10 with 500 images from the NAIP dataset annotated via roboflow, boosting prediction accuracy from 30% to 75%.",
+      "Collaborated on RAG creation with Gemini LLM to enable users to query uploaded PDFs, reducing LLM costs by 2.79%. Built a Firebase and Python backend for authentication & API calls, maintaining 0 additional costs."
     ],
   },
   {
@@ -144,16 +145,16 @@ const experiences = [
     ],
   },
   {
-    title: "ML Full stack Developer",
-    company_name: "IQSpatial",
-    icon: iqspatial,
+    title: "Software Engineer",
+    company_name: "Techn Incubator Queens College(TIQC)",
+    icon: tiqc,
     iconBg: "#383E56",
-    date: "May. 2024 - Present",
+    date: "Feb. 2023 - May 2023",
     points: [
-      "Spearheaded the development of ML models in Colab, including a Solar Panel detection model using YOLOv10 with 500 images from the NAIP dataset annotated via roboflow, boosting prediction accuracy from 30% to 75%.",
-      "Collaborated on RAG creation with Gemini LLM to enable users to query uploaded PDFs, reducing LLM costs by 2.79%. Built a Firebase and Python backend for authentication & API calls, maintaining 0 additional costs."
+      "Consulted on developing a backend for Active World, an E-commerce startup, and led the creation of a Python system to automate API fetches and database updates, enhancing data availability in database by 20%.",
+      "Developed algorithms for processing API responses from 30+ web services & structured a MySQL database, reducing inconsistencies by 13% in real-time data integration. Teamed up with QA for API integration & security"
     ],
-  },
+  }
 ];
 
 const testimonials = [

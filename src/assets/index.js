@@ -41,6 +41,9 @@ import tripguide from "./tripguide.png";
 import iqspatial from "./iqspatial.png"
 import speakhire from "./speakhire.jpg"
 import tiqc from "./tiqc.png"
+import Sri_Tarun_Resume from "./Sri_Tarun_Resume.pdf"
+import linkedin from "./linkedin.png"
+import linkedin1 from "./linkedin1.png"
 
 export {
   backend,
@@ -79,7 +82,10 @@ export {
   iqspatial,
   gamerank,
   textanalysis,
-  bookingapp
+  bookingapp,
+  Sri_Tarun_Resume,
+  linkedin,
+  linkedin1
 };
 
 export default astronaut;

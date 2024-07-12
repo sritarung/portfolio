@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { eclipselogo1, menu, close } from "../assets";
+import Sri_Tarun_Resume from "../assets/Sri_Tarun_Resume.pdf";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -49,7 +50,15 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row gap-4'>
+            <li
+              className={`${
+                active === "Resume" ? "text-white" : "text-secondary"
+              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              onClick={()=>{ setActive("Resume")}}
+            >
+              <a href={Sri_Tarun_Resume} target="_blank">Resume</a>
+            </li>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -74,9 +83,20 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[150px] z-10 rounded-xl`}
           >
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+              <li
+                className={`${
+                  active === "Resume" ? "text-white" : "text-secondary"
+                } hover:text-white text-[18px] font-medium cursor-pointer`}
+                onClick={()=>{
+                  setToggle(!toggle);
+                  setActive("Resume");
+                }}
+              >
+                <a href={Sri_Tarun_Resume} target="_blank">Resume</a>
+              </li>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}

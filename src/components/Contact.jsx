@@ -6,10 +6,13 @@ import { styles } from "../styles";
 import { Blackhole, EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { github, linkedin, linkedin1 } from "../assets";
+import Tilt from "react-tilt";
 
 
 const Contact = () => {
   const formRef = useRef();
+  const [active, setActive] = useState("");
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -67,13 +70,38 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-1 overflow-hidden`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
+        
+          <ul className='list-none sm:flex-row flex-nowrap gap-2'>
+            <li>
+              <Tilt
+                options={{
+                max: 45,
+                scale: 1,
+                speed: 150,
+              }}>
+                <a href={"https://github.com/sritarung"} target="_blank"><img src={github} className='w-20'/></a>
+              </Tilt>
+            </li>
+            <li>
+              <Tilt
+                options={{
+                max: 45,
+                scale: 1,
+                speed: 150,
+              }}>
+              <a href={"https://www.linkedin.com/in/sri-tarung/"} target="_blank"><img src={linkedin1} className='w-20'/></a>
+              </Tilt>
+            </li>
+          </ul>
+        
+          
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
@@ -88,7 +116,7 @@ const Contact = () => {
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your good name?"
+              placeholder="Enter your Full name!"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -99,7 +127,7 @@ const Contact = () => {
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="Enter your email address!"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -110,7 +138,7 @@ const Contact = () => {
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder='What you want to say?'
+              placeholder='Enter your message!'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
