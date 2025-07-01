@@ -44,6 +44,8 @@ import tiqc from "./tiqc.png"
 import Sri_Tarun_Resume from "./Sri_Tarun_Resume.pdf"
 import linkedin from "./linkedin.png"
 import linkedin1 from "./linkedin1.png"
+import alumni from "./alumni.jpg"
+
 
 export {
   backend,
@@ -85,7 +87,8 @@ export {
   bookingapp,
   Sri_Tarun_Resume,
   linkedin,
-  linkedin1
+  linkedin1,
+  alumni
 };
 
 export default astronaut;

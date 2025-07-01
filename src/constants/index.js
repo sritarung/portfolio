@@ -28,7 +28,8 @@ import {
   iqspatial,
   gamerank,
   textanalysis,
-  bookingapp
+  bookingapp,
+  alumni
 } from "../assets";
 
 export const navLinks = [
@@ -121,13 +122,23 @@ const technologies = [
 ];
 
 const experiences = [
-  
   {
-    title: "ML Full stack Developer",
+    title: "Full Stack Developer",
+    company_name: "Alumni Association of City College of New York",
+    icon: alumni,
+    iconBg: "#383E56",
+    date: "Sep. 2024 - Present",
+    points: [
+      "Refined an online payment system that drove 80+ paid alumni sign-ups per month, contributing to a 2% revenue lift. Integrated a donation-matching feature (Double the Donation), increasing individual contributions by 10% and streamlining data imports to enhance operational efficiency.",
+      "Designed alumni group sections that boosted engagement among 5,000+ alumni, leading to a 40% rise in active participation. Built a scalable AWS–MongoDB infrastructure to handle 1TB+ of data and deployed a CI/CD pipeline via GitHub, cutting deployment time by 50% for faster updates."
+    ],
+  },
+  {
+    title: "Software Engineer - ML",
     company_name: "IQSpatial",
     icon: iqspatial,
-    iconBg: "#383E56",
-    date: "May 2024 - Present",
+    iconBg: "#E6DEDD",
+    date: "May 2024 - Dec. 2024",
     points: [
       "Spearheaded the development of ML models in Colab, including a Solar Panel detection model using YOLOv10 with 500 images from the NAIP dataset annotated via roboflow, boosting prediction accuracy from 30% to 75%.",
       "Collaborated on RAG creation with Gemini LLM to enable users to query uploaded PDFs, reducing LLM costs by 2.79%. Built a Firebase and Python backend for authentication & API calls, maintaining 0 additional costs."
@@ -137,22 +148,11 @@ const experiences = [
     title: "Software Engineer",
     company_name: "SPEAKHIRE",
     icon: speakhire,
-    iconBg: "#E6DEDD",
+    iconBg: "#383E56",
     date: "Jul. 2023 - Aug. 2023",
     points: [
       "Led a team of four in developing the frontend for SPEAKHIRE, a non-profit empowering immigrants’ college readiness. Utilized HTML, CSS, JavaScript, React, MUI, and Redux, achieving a 70% increase in website traffic.",
       "Implemented effective UI features for the company’s web application in collaboration with the UI Designer and the team, resulting in a 50% increase in applicants for SPEAKHIRE’s leadership courses."
-    ],
-  },
-  {
-    title: "Software Engineer",
-    company_name: "Techn Incubator Queens College(TIQC)",
-    icon: tiqc,
-    iconBg: "#383E56",
-    date: "Feb. 2023 - May 2023",
-    points: [
-      "Consulted on developing a backend for Active World, an E-commerce startup, and led the creation of a Python system to automate API fetches and database updates, enhancing data availability in database by 20%.",
-      "Developed algorithms for processing API responses from 30+ web services & structured a MySQL database, reducing inconsistencies by 13% in real-time data integration. Teamed up with QA for API integration & security"
     ],
   }
 ];
